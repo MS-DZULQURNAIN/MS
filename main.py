@@ -10,3 +10,5 @@ app = Client(name="Okk", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN, 
 #Command Running
 
 @app.on_message(filters.command([start, "st"] & filters.private)
+async def _(app, message):
+    await message.reply_text("APA NJING")
